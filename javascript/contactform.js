@@ -2,7 +2,7 @@ $('form#contact_form').validate({
   messages: { },
   submitHandler: function(form) {
     $.ajax({
-      url: "//formspree.io/info@rocketboard.ru",
+    url: "https://usebasin.com/f/c0f4b9ff0146.json",
       method: "POST",
       data: $(form).serialize(),
       dataType: "json",
