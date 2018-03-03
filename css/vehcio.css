@@ -1,0 +1,40 @@
+/* VEHCIO CSS */
+
+.navbar {
+    background-color: #979898;
+}
+
+.navbar .navbar-brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#location-nav {
+    padding-top: 75px;
+    padding-right:25px;
+}
+
+.span5 {
+    padding:10px;
+} 
+
+.angular-google-map-container {
+    height: 400px;
+}
+.largeMap {
+    height: 400px;
+}
+
+/* #laserCounts {
+margin-left: 32px;
+} */
+
+.angular-google-map-container .smallMap {
+    height:250px;
+}
+
+.btn-vehcio {
+    background-color: #da532f;
+    border: none}
