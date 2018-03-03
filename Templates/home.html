@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+	{module_contentholder,name="section_style"}
+</head>
+<body>
+	<header id="home">
+		{module_contentholder,name="section_navPrimary"}
+		<!-- hero unit -->
+		<section class="hero" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                    <h1 class="animated fadeInDown">HALCYON<span>DAYS</span></h1>
+                    <p class="animated fadeInUp delay-05s">An exclusive HTML5/CSS3 freebie by Peter Finlan, for <em>Codrops</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <a href="/contact/index.html" class="learn-more-btn">Contact Our Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	</header>
+	{tag_pagecontent}		
+	<!-- portfolio 
+	<section class="portfolio text-center section-padding" id="portfolio">
+          <div class="container">
+            <div class="row no-pagination">
+            	<h1 class="arrow">Portfolio</h1>
+              {module_webapps render="item" id="MRK Portfolio App" filter="all" resultsPerPage="3"}
+            </div>
+          </div>
+        </section>
+     portfolio -->
+       <!-- CTA -->
+       <div class="ignite-cta text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="ignite-btn">Ignite Your Passion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- our team -->
+    <section class="team text-center section-padding" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="arrow">We're a team that adore what we do</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="team-wrapper no-pagination">
+                    <div id="teamSlider">
+                        {module_webapps render="item" id="Our Team" filter="all" resultsPerPage="3"}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscibe -->
+    {module_contentholder,name="section_subscribe"}
+    <!-- contact -->
+    {module_contentholder,name="section_contact"}	
+   
+    
+    <!-- footer -->
+
+	{module_contentholder,name="section_footer"}	
+	{module_contentholder,name="section_js"}
+</body>
+</html>

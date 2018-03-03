@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+	{module_contentholder,name="section_style"}
+</head>
+<body>
+	<header id="home">
+		{module_contentholder,name="section_navPrimary"}		
+	</header>
+	
+	<section class="text-center section-padding" id="blog">
+		<h1 class="title-inside">Blog</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					{tag_pagecontent}	
+				</div>
+				<!-- sidebar -->
+				<div class="col-md-4 sidebar">
+					<!-- search section -->
+					<section class="wp2">
+						<h2>Search</h2>
+						<form name="catsearchform61723" method="post" action="/Default.aspx?SiteSearchID=3005&amp;ID=/search/search-results.html">
+
+							
+
+							<div class="input-group">
+								<input class="form-control" type="text" name="CAT_Search" id="CAT_Search" />								
+								<span class="input-group-btn">
+									<input class="btn btn-primary" type="submit" value="Go">
+									
+								</span>
+							</div>
+						</form>
+					</section>
+					<!-- cloud tag section -->
+					<section class="wp2">
+						<h2>Tags</h2>
+						{tag_blogtagcloud}
+					</section>
+					<!-- popular post section -->
+					<section class="wp2">
+						<h2>Popular Post</h2>
+						<ul class="list-inline popular-posts">
+							{module_blogpostlist,13543,5, template="/ModuleTemplates/custom/blog-latest-posts.tpl"}
+
+						</ul>
+					</section>
+					<!-- categories -->
+					<section class="wp2">
+						<h2>Blog Categories</h2>
+						{tag_blogtaglist}
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- subscribe -->
+	{module_contentholder,name="section_subscribe"}	
+	<!-- contact -->
+	{module_contentholder,name="section_contact"}	
+	<!-- footer -->
+
+	{module_contentholder,name="section_footer"}
+	<script>
+		jQuery(document).ready(function($) { 
+			jQuery('.nav li a[href="/halcyon-blog"]').parent().addClass('active');
+		});
+	</script>	
+	{module_contentholder,name="section_js"}
+</body>
+</html>
