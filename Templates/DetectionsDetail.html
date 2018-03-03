@@ -1,0 +1,90 @@
+<!-- Detections Detail Page -->
+<div ng-controller="detectionsDetailController" >
+<div class="row">
+<div class="col-md-12">
+	<h3>Detections - Detail</h3>
+</div>
+</div>
+<div class="row">
+
+	
+	<div class="col-md-6" ng-controller="detectionsController">
+		<h4>Most Recent Detections</h4>
+
+				<img src="{{image}}" class="img-responsive">
+
+		
+			<table class="table">
+              <thead>
+                <tr>
+
+                  <th>Time</th>
+                  <th>Alert Id</th>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Confidence</th>
+                  <th>Proc Seconds</th>
+                  <th>Image</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+              
+                <tr ng-repeat="detection in Detections">
+                  <td>{{detection.ivaAlert.kfTime}}</td>
+                  <td>{{detection.ivaAlert.alertId}}</td>
+                  <td>{{detection.make}}</td>
+                  <td>{{detection.carModel}}</td>
+                  <td>{{detection.confidence}}</td>
+                  <td>{{detection.processTimeSeconds}}</td>
+                  <td><button ng-click='getImageSrc(detection.ivaAlert.alertImage)'>Show</button></td>
+
+                </tr>
+
+            </tbody>
+          </table>
+
+		</div>
+
+	<div class="col-md-6" ng-controller="alertsController">
+		<h4>Latest Alerts - <button ng-click='getAlerts()'>Refresh</button></h4>
+			<img src="{{image}}" class="img-responsive">
+
+			<table class="table">
+              <thead>
+                <tr>
+
+                  <th>View Id</th>
+                  <th>Alert Id</th>
+                  <th>Alert Time</th>
+                  <th>Alert Image</th>
+                  <th>Video Frame</th>
+                  <th>Cropped Image</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+              
+                <tr ng-repeat="alert in Alerts">
+                  <td>{{alert.viewId}}</td>
+                  <td>{{alert.alertId}}</td>
+                  <td>{{alert.kfTime}}</td>
+                  <td> <button ng-click='getImageSrc(alert.alertImage)'>Show</button></td>
+                  <td><button ng-click='getImageSrc(alert.VideoFrame)'>Show</button></td>
+                  <td><button ng-click='getImageSrc(alert.CroppedImage)'>Show</button></td>
+
+                </tr>
+
+            </tbody>
+          </table>
+
+		</div>
+
+
+
+
+
+</div>
+
+</div>
+
