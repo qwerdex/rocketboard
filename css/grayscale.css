@@ -14,7 +14,7 @@ body {
     height: 100%;
     color: #000;
     background-color: #fff;
-    font: 300 18px/1.6 "Fira Sans",Helvetica,Arial,sans-serif;
+    font: 400 18px/1.6 "Fira Sans",Helvetica,Arial,sans-serif;
     margin: 0px !important;
     
 }
@@ -64,7 +64,7 @@ h6 {
     margin: 0 0 35px;
     /* text-transform: uppercase;
     */
-    /*font-family: "Fira Sans",Helvetica,Arial,sans-serif; */
+    font-family: "Fira Sans",Helvetica,Arial,sans-serif; 
     font-weight: 800;
 }
 
