@@ -1,0 +1,31 @@
+<!-- Laser Count Detail Dashboard partial -->
+<div ng-controller="lasercountDetailController">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Laser Count - Detail</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Latest 5 minute DATA</h4>
+            <nvd3-line-chart data="chartData" id="laserCountChart" xAxisTickFormat="xAxisTickFormat_Time_Format()" yAxisTickFormat="yAxisTickFormatFunction()" width="550" height="350" showXAxis="true" showYAxis="true" interactive="true" useInteractiveGuideLine="true" tooltips="true">
+                <svg></svg>
+            </nvd3-line-chart>
+        </div>
+        <div class="col-md-6">
+            <h4>Latest 10 Days - Hourly Total</h4>
+            <nvd3-line-with-focus-chart data="chartDataHour" id="laserCountChartHour" xAxisTickFormat="xAxisTickFormat_Time_Format_Hour()" yAxisTickFormat="yAxisTickFormatFunction()" x2AxisTickFormat="xAxisTickFormat_Time_Format_Hour()" width="550" height="350" showXAxis="true" showYAxis="true" interactive="true" useInteractiveGuideLine="true" tooltips="true">
+                <svg></svg>
+            </nvd3-line-with-focus-chart>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Latest 30 days - Daily Total</h4>
+            <nvd3-line-chart data="chartDataDay" id="laserCountChartDay" xAxisTickFormat="xAxisTickFormat_Time_Format_Day()" yAxisTickFormat="yAxisTickFormatFunction()" width="550" height="350" showXAxis="true" showYAxis="true" interactive="true" useInteractiveGuideLine="true" tooltips="true">
+                <svg></svg>
+            </nvd3-line-chart>
+        </div>
+
+    </div>
+</div>
